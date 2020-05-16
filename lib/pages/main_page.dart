@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MainPage extends StatelessWidget {
+
+  final double sideMergin;
+  const MainPage({Key key, this.sideMergin = 160.0}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -9,7 +13,7 @@ class MainPage extends StatelessWidget {
         child: DefaultTextStyle.merge(
           style: GoogleFonts.notoSans(),
           child: Container(
-            margin: EdgeInsets.only(top: 40, right: 160, left: 160, bottom: 40),
+            margin: EdgeInsets.only(top: 40, right: sideMergin, left: sideMergin, bottom: 40),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

@@ -3,6 +3,10 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/widgets/itemized_text.dart';
 
 class ResumePage extends StatelessWidget {
+
+  final double sideMergin;
+  const ResumePage({Key key, this.sideMergin = 160.0}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -10,7 +14,7 @@ class ResumePage extends StatelessWidget {
         child: DefaultTextStyle.merge(
           style: GoogleFonts.notoSans(),
           child: Container(
-            margin: EdgeInsets.only(top: 40, right: 160, left: 160, bottom: 40),
+            margin: EdgeInsets.only(top: 40, right: sideMergin, left: sideMergin, bottom: 40),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [

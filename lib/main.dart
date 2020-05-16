@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:responsive_builder/responsive_builder.dart';
 import 'package:portfolio/pages/main_page.dart';
 import 'package:portfolio/pages/resume_page.dart';
 
@@ -32,6 +33,10 @@ class DefaultPageState extends State<DefaultPage> {
   final List<Widget> _pages = [
     MainPage(),
     ResumePage(),
+  ];
+  final List<Widget> _mobilePages = [
+    MainPage(sideMergin: 32.0),
+    ResumePage(sideMergin: 32.0),
   ];
 
   @override
@@ -80,7 +85,12 @@ class DefaultPageState extends State<DefaultPage> {
           ],
         ),
       ),
-      body: _pages[_index],
+      body: ResponsiveBuilder(builder: (context, sizingInformation) {
+        if (sizingInformation.deviceScreenType == DeviceScreenType.mobile) {
+          return _mobilePages[_index];
+        }
+        return _pages[_index];
+      }),
     );
   }
 }
