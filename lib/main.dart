@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:url_launcher/url_launcher.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 import 'package:portfolio/pages/main_page.dart';
 import 'package:portfolio/pages/resume_page.dart';
@@ -16,6 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'portfolio',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        brightness: Brightness.dark,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: DefaultPage(),
@@ -43,47 +42,23 @@ class DefaultPageState extends State<DefaultPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('yuzumone\' portfolio'),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        title: const Text('yuzumone'),
         actions: [
-          IconButton(
-            icon: FaIcon(FontAwesomeIcons.github),
-            onPressed: () {
-              launch('https://github.com/yuzumone');
-            },
+          FlatButton(
+            textColor: Colors.white,
+            onPressed: () => setState(() => _index = 0),
+            child: Text('Main'),
+            shape: CircleBorder(side: BorderSide(color: Colors.transparent)),
           ),
-          IconButton(
-            icon: FaIcon(FontAwesomeIcons.medium),
-            onPressed: () {
-              launch('https://medium.com/@yuzumone');
-            },
-          ),
-          IconButton(
-            icon: FaIcon(FontAwesomeIcons.linkedin),
-            onPressed: () {
-              launch('https://www.linkedin.com/in/kazuaki-togawa/');
-            },
+          FlatButton(
+            textColor: Colors.white,
+            onPressed: () => setState(() => _index = 1),
+            child: Text('Resume'),
+            shape: CircleBorder(side: BorderSide(color: Colors.transparent)),
           ),
         ],
-      ),
-      drawer: Drawer(
-        child: ListView(
-          children: [
-            ListTile(
-              title: Text('Main'),
-              onTap: () {
-                Navigator.of(context).pop();
-                setState(() => _index = 0);
-              },
-            ),
-            ListTile(
-              title: Text('Resume'),
-              onTap: () {
-                Navigator.of(context).pop();
-                setState(() => _index = 1);
-              },
-            ),
-          ],
-        ),
       ),
       body: ResponsiveBuilder(builder: (context, sizingInformation) {
         if (sizingInformation.deviceScreenType == DeviceScreenType.mobile) {
