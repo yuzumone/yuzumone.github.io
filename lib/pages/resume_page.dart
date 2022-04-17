@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class ResumePage extends StatelessWidget {
   final double sideMergin;
-  const ResumePage({Key key, this.sideMergin = 160.0}) : super(key: key);
+  const ResumePage({Key? key, this.sideMergin = 160.0}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
