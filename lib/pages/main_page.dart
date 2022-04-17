@@ -5,7 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 class MainPage extends StatelessWidget {
   final double sideMergin;
-  const MainPage({Key key, this.sideMergin = 160.0}) : super(key: key);
+  const MainPage({Key? key, this.sideMergin = 160.0}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +37,7 @@ class MainPage extends StatelessWidget {
                   ),
                 ),
               ),
-                            SizedBox(
+              SizedBox(
                 height: 24.0,
               ),
               Container(
