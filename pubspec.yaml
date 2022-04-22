@@ -21,6 +21,8 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   auto_route_generator: ^3.2.3
+  network_image_mock: ^2.1.0
+  grinder: ^0.9.1
   build_runner:
 
 flutter:

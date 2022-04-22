@@ -17,10 +17,10 @@ jobs:
     - uses: subosito/flutter-action@v2
       with:
         channel: 'stable'
-    - name: Build web
+    - name: Run test and build web
       run: |
         flutter pub get
-        flutter build web
+        dart tool/grind.dart
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       if: ${{ github.ref == 'refs/heads/main' }}
