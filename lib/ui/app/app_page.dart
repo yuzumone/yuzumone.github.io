@@ -1,7 +1,8 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio/ui/route/app_router.dart';
+import 'package:portfolio/ui/route/app_router.gr.dart';
 
+@RoutePage()
 class AppPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class AppPage extends StatelessWidget {
             },
             child: Text('Main'),
             style: TextButton.styleFrom(
-              primary: Colors.white,
+              foregroundColor: Colors.white,
             ),
           ),
           TextButton(
@@ -26,7 +27,7 @@ class AppPage extends StatelessWidget {
             },
             child: Text('Resume'),
             style: TextButton.styleFrom(
-              primary: Colors.white,
+              foregroundColor: Colors.white,
             ),
           ),
         ],

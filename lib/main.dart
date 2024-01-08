@@ -20,12 +20,7 @@ class MyApp extends StatelessWidget {
           ThemeData.dark().textTheme,
         ),
       ),
-      routerDelegate: _appRouter.delegate(),
-      routeInformationProvider: _appRouter.routeInfoProvider(),
-      routeInformationParser: _appRouter.defaultRouteParser(),
-      builder: (_, router) {
-        return router!;
-      },
+      routerConfig: _appRouter.config(),
     );
   }
 }

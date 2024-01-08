@@ -1,8 +1,10 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:portfolio/ui/responsive_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+@RoutePage()
 class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -45,7 +47,7 @@ class MainPage extends StatelessWidget {
                       child: IconButton(
                         icon: FaIcon(FontAwesomeIcons.github),
                         onPressed: () {
-                          launch('https://github.com/yuzumone');
+                          launchUrl(Uri.parse('https://github.com/yuzumone'));
                         },
                       ),
                     ),
@@ -54,7 +56,7 @@ class MainPage extends StatelessWidget {
                       child: IconButton(
                         icon: FaIcon(FontAwesomeIcons.medium),
                         onPressed: () {
-                          launch('https://medium.com/@yuzumone');
+                          launchUrl(Uri.parse('https://medium.com/@yuzumone'));
                         },
                       ),
                     ),
@@ -63,7 +65,7 @@ class MainPage extends StatelessWidget {
                       child: IconButton(
                         icon: FaIcon(FontAwesomeIcons.linkedin),
                         onPressed: () {
-                          launch('https://www.linkedin.com/in/kazuaki-togawa/');
+                          launchUrl(Uri.parse('https://www.linkedin.com/in/kazuaki-togawa/'));
                         },
                       ),
                     ),
