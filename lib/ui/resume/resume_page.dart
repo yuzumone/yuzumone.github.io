@@ -1,6 +1,8 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio/ui/responsive_widget.dart';
 
+@RoutePage()
 class ResumePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

@@ -1,7 +1,8 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:portfolio/ui/route/app_router.dart';
+import 'package:portfolio/ui/route/app_router.gr.dart';
 
+@RoutePage()
 class AppPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
