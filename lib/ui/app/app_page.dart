@@ -18,7 +18,7 @@ class AppPage extends StatelessWidget {
             },
             child: Text('Main'),
             style: TextButton.styleFrom(
-              primary: Colors.white,
+              foregroundColor: Colors.white,
             ),
           ),
           TextButton(
@@ -27,7 +27,7 @@ class AppPage extends StatelessWidget {
             },
             child: Text('Resume'),
             style: TextButton.styleFrom(
-              primary: Colors.white,
+              foregroundColor: Colors.white,
             ),
           ),
         ],

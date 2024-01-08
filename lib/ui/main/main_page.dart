@@ -47,7 +47,7 @@ class MainPage extends StatelessWidget {
                       child: IconButton(
                         icon: FaIcon(FontAwesomeIcons.github),
                         onPressed: () {
-                          launch('https://github.com/yuzumone');
+                          launchUrl(Uri.parse('https://github.com/yuzumone'));
                         },
                       ),
                     ),
@@ -56,7 +56,7 @@ class MainPage extends StatelessWidget {
                       child: IconButton(
                         icon: FaIcon(FontAwesomeIcons.medium),
                         onPressed: () {
-                          launch('https://medium.com/@yuzumone');
+                          launchUrl(Uri.parse('https://medium.com/@yuzumone'));
                         },
                       ),
                     ),
@@ -65,7 +65,7 @@ class MainPage extends StatelessWidget {
                       child: IconButton(
                         icon: FaIcon(FontAwesomeIcons.linkedin),
                         onPressed: () {
-                          launch('https://www.linkedin.com/in/kazuaki-togawa/');
+                          launchUrl(Uri.parse('https://www.linkedin.com/in/kazuaki-togawa/'));
                         },
                       ),
                     ),
