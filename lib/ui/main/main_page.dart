@@ -65,7 +65,8 @@ class MainPage extends StatelessWidget {
                       child: IconButton(
                         icon: FaIcon(FontAwesomeIcons.linkedin),
                         onPressed: () {
-                          launchUrl(Uri.parse('https://www.linkedin.com/in/kazuaki-togawa/'));
+                          launchUrl(Uri.parse(
+                              'https://www.linkedin.com/in/kazuaki-togawa/'));
                         },
                       ),
                     ),
