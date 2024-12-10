@@ -1,8 +1,11 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/ui/route/app_router.dart';
 
 void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  GoogleFonts.config.allowRuntimeFetching = kDebugMode;
   runApp(MyApp());
 }
 
@@ -16,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         brightness: Brightness.dark,
         visualDensity: VisualDensity.adaptivePlatformDensity,
-        textTheme: GoogleFonts.notoSansTextTheme(
+        textTheme: GoogleFonts.notoSansJpTextTheme(
           ThemeData.dark().textTheme,
         ),
       ),
