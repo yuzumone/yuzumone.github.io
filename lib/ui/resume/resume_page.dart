@@ -15,30 +15,38 @@ class ResumePage extends StatelessWidget {
             children: [
               Container(
                 alignment: Alignment.topRight,
-                child: Text('2022/04 現在'),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.end,
+                  children: [
+                    Text('2024/12 現在'),
+                    Text('Updated in Dec 2024'),
+                  ],
+                ),
               ),
               Container(
                 margin: EdgeInsets.only(top: 24),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
+                    Text('English version is below.'),
                     Text(
                       '概要',
                       style: Theme.of(context).textTheme.headlineSmall,
                     ),
                     Text(
-                      'アプライアンス機器の構築運用',
+                      'アプライアンス機器・サーバの構築運用',
                       style: Theme.of(context).textTheme.titleLarge,
                     ),
                     Text('- ADC'),
                     Text('- GSLB'),
-                    Text('- DNS'),
-                    Text('- GNSS'),
+                    Text('- DNS (権威DNS/フルリゾルバ)'),
+                    Text('- GNSS/NTP'),
                     Text(
                       'ソフトウェア開発',
                       style: Theme.of(context).textTheme.titleLarge,
                     ),
-                    Text('- 自動化ツール開発'),
+                    Text('- オペレーション自動化・モニタリング関連ツール開発'),
+                    Text('- DNS・GSLB レコード管理関連ツール開発'),
                     Text(
                       '業務外活動',
                       style: Theme.of(context).textTheme.titleLarge,
@@ -110,13 +118,17 @@ class ResumePage extends StatelessWidget {
                       style: Theme.of(context).textTheme.titleMedium,
                     ),
                     Text(
+                      '- Go',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text(
                       'その他',
                       style: Theme.of(context).textTheme.titleLarge,
                     ),
-                    Text('- データセンタネットワーク監視 (Prometheus/Alertmanager/Thanos)'),
+                    Text('- モニタリングツール (Prometheus/Alertmanager/Thanos)'),
                     Text('- 構成管理ツール (Chef/Ansible/AWX)'),
-                    Text('- PaaS (VMware Tanzu Application Service)'),
-                    Text('- CaaS (Kubernetes)'),
+                    Text('- DNS (Bind)'),
+                    Text('- CaaS (Kubernetes/Argo)'),
                   ],
                 ),
               ),
@@ -130,7 +142,7 @@ class ResumePage extends StatelessWidget {
                       style: Theme.of(context).textTheme.headlineSmall,
                     ),
                     Text(
-                      'Y株式会社（現職）',
+                      'L株式会社（現職）',
                       style: Theme.of(context).textTheme.titleLarge,
                     ),
                     Text(
@@ -172,6 +184,184 @@ class ResumePage extends StatelessWidget {
                       style: Theme.of(context).textTheme.titleMedium,
                     ),
                     Text('マルチメディア，分散，協調とモバイル(DICOMO2017)シンポジウム'),
+                    Text(
+                      'Dynamic Resource Adaptation Method by Cooperative User Devices in Wireless Network',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text(
+                        'The 20th International Conference on Network-Based Information Systems, NBiS 2017'),
+                    Text(
+                      'Cooperative and priority based on dynamic resource adaptation method in wireless network',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text(
+                        'International Journal of Space-Based and Situated Computing'),
+                  ],
+                ),
+              ),
+              Divider(),
+              Container(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Summary',
+                      style: Theme.of(context).textTheme.headlineSmall,
+                    ),
+                    Text(
+                      'Configuring and operating appliance and server infrastructure',
+                      style: Theme.of(context).textTheme.titleLarge,
+                    ),
+                    Text('- ADC'),
+                    Text('- GSLB'),
+                    Text('- DNS (Authoritative DNS/Full resolver)'),
+                    Text('- GNSS/NTP'),
+                    Text(
+                      'Development',
+                      style: Theme.of(context).textTheme.titleLarge,
+                    ),
+                    Text('- DevOps and Monitoring tool development'),
+                    Text('- DNS and GSLB record management system development'),
+                    Text(
+                      'Personal activities',
+                      style: Theme.of(context).textTheme.titleLarge,
+                    ),
+                    Text('- Android app and library development'),
+                    Text('- Flutter app and dart library development'),
+                  ],
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(top: 24),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Skils',
+                      style: Theme.of(context).textTheme.headlineSmall,
+                    ),
+                    Text(
+                      'Network appliances',
+                      style: Theme.of(context).textTheme.titleLarge,
+                    ),
+                    Text(
+                      '- A10 AX/Thunder',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text(
+                      '- Brocade ADX',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text(
+                      '- Cisco Catalyst/Nexus',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text(
+                      '- Citrix NetScaler MPX/SDX/VPX/ADM',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text(
+                      '- F5 BIG-IP',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text(
+                      '- Whitebox network switch (Cumulus)',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text(
+                      'Languages',
+                      style: Theme.of(context).textTheme.titleLarge,
+                    ),
+                    Text(
+                      '- Python',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text(
+                      '- Ruby',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text(
+                      '- Java',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text(
+                      '- Kotlin',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text(
+                      '- Dart',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text(
+                      '- Go',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text(
+                      'Others',
+                      style: Theme.of(context).textTheme.titleLarge,
+                    ),
+                    Text('- Monitoring (Prometheus/Alertmanager/Thanos)'),
+                    Text('- Provisioning (Chef/Ansible/AWX)'),
+                    Text('- DNS (Bind)'),
+                    Text('- CaaS (Kubernetes/Argo)'),
+                  ],
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(top: 24),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Career history',
+                      style: Theme.of(context).textTheme.headlineSmall,
+                    ),
+                    Text(
+                      'L Corporation (current company)',
+                      style: Theme.of(context).textTheme.titleLarge,
+                    ),
+                    Text(
+                      'Team',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text('Datacenter Network'),
+                    Text(
+                      'Tasks',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text('- Management of LB, GSLB and DNS'),
+                    Text(
+                        '- Management of monitoring tool (Prometheus and thanos)'),
+                    Text(
+                        '- Development of configuration automation tool using Ansible, AWX and Python'),
+                  ],
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(top: 24),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Academic papers',
+                      style: Theme.of(context).textTheme.headlineSmall,
+                    ),
+                    Text(
+                      'Adaptive Resource Control System for Network Congestion and Failure in Natural Disasters',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text('The 78th National Convention of IPSJ'),
+                    Text(
+                      'Adaptive Resource Control Network System by Cooperated Device Functions',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text('The 79th National Convention of IPSJ'),
+                    Text(
+                      'Implementation and Evaluation of Cooperative Device Functions for Dynamic Resource Adaptive Network System',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text(
+                        'Multimedia, Distributed, Cooperative, and Mobile Symposium, DICOMO 2017'),
                     Text(
                       'Dynamic Resource Adaptation Method by Cooperative User Devices in Wireless Network',
                       style: Theme.of(context).textTheme.titleMedium,
