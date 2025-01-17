@@ -142,7 +142,7 @@ class ResumePage extends StatelessWidget {
                       style: Theme.of(context).textTheme.headlineSmall,
                     ),
                     Text(
-                      'L株式会社（現職）',
+                      'Y株式会社',
                       style: Theme.of(context).textTheme.titleLarge,
                     ),
                     Text(
@@ -157,6 +157,20 @@ class ResumePage extends StatelessWidget {
                     Text('- LB・GSLB・DNS の構築運用'),
                     Text('- 監視環境構築（Prometheus/thanos）'),
                     Text('- 設定変更自動化（Ansible/AWX/Python CLI）'),
+                    Text(
+                      'L株式会社（現職）',
+                      style: Theme.of(context).textTheme.titleLarge,
+                    ),
+                    Text(
+                      '所属',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text('データセンタネットワーク'),
+                    Text(
+                      '業務内容',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text('- 経営統合のため上記と同一'),
                   ],
                 ),
               ),
@@ -317,6 +331,24 @@ class ResumePage extends StatelessWidget {
                       style: Theme.of(context).textTheme.headlineSmall,
                     ),
                     Text(
+                      'Y Corporation',
+                      style: Theme.of(context).textTheme.titleLarge,
+                    ),
+                    Text(
+                      'Team',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text('Datacenter Network'),
+                    Text(
+                      'Tasks',
+                      style: Theme.of(context).textTheme.titleMedium,
+                    ),
+                    Text('- Configuring and managing Loadbalancer, GSLB, DNS servers'),
+                    Text(
+                        '- Managing of monitoring tools (Prometheus, Thanos, Grafana, etc)'),
+                    Text(
+                        '- Development of configuration automation tool using Ansible, AWX and Python'),
+                    Text(
                       'L Corporation (current company)',
                       style: Theme.of(context).textTheme.titleLarge,
                     ),
@@ -329,11 +361,9 @@ class ResumePage extends StatelessWidget {
                       'Tasks',
                       style: Theme.of(context).textTheme.titleMedium,
                     ),
-                    Text('- Management of LB, GSLB and DNS'),
+                    Text('- Y Corporation and other corporation merged into L Corporation'),
                     Text(
-                        '- Management of monitoring tool (Prometheus and thanos)'),
-                    Text(
-                        '- Development of configuration automation tool using Ansible, AWX and Python'),
+                        '- My tasks are unchanged following the merger'),
                   ],
                 ),
               ),
@@ -343,7 +373,7 @@ class ResumePage extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Academic papers',
+                      'Journal',
                       style: Theme.of(context).textTheme.headlineSmall,
                     ),
                     Text(
