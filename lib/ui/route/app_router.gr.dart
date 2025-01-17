@@ -13,32 +13,6 @@ import 'package:portfolio/ui/app/app_page.dart' as _i1;
 import 'package:portfolio/ui/main/main_page.dart' as _i2;
 import 'package:portfolio/ui/resume/resume_page.dart' as _i3;
 
-abstract class $AppRouter extends _i4.RootStackRouter {
-  $AppRouter({super.navigatorKey});
-
-  @override
-  final Map<String, _i4.PageFactory> pagesMap = {
-    AppRoute.name: (routeData) {
-      return _i4.AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: _i1.AppPage(),
-      );
-    },
-    MainRoute.name: (routeData) {
-      return _i4.AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: _i2.MainPage(),
-      );
-    },
-    ResumeRoute.name: (routeData) {
-      return _i4.AutoRoutePage<dynamic>(
-        routeData: routeData,
-        child: _i3.ResumePage(),
-      );
-    },
-  };
-}
-
 /// generated route for
 /// [_i1.AppPage]
 class AppRoute extends _i4.PageRouteInfo<void> {
@@ -50,7 +24,12 @@ class AppRoute extends _i4.PageRouteInfo<void> {
 
   static const String name = 'AppRoute';
 
-  static const _i4.PageInfo<void> page = _i4.PageInfo<void>(name);
+  static _i4.PageInfo page = _i4.PageInfo(
+    name,
+    builder: (data) {
+      return _i1.AppPage();
+    },
+  );
 }
 
 /// generated route for
@@ -64,7 +43,12 @@ class MainRoute extends _i4.PageRouteInfo<void> {
 
   static const String name = 'MainRoute';
 
-  static const _i4.PageInfo<void> page = _i4.PageInfo<void>(name);
+  static _i4.PageInfo page = _i4.PageInfo(
+    name,
+    builder: (data) {
+      return _i2.MainPage();
+    },
+  );
 }
 
 /// generated route for
@@ -78,5 +62,10 @@ class ResumeRoute extends _i4.PageRouteInfo<void> {
 
   static const String name = 'ResumeRoute';
 
-  static const _i4.PageInfo<void> page = _i4.PageInfo<void>(name);
+  static _i4.PageInfo page = _i4.PageInfo(
+    name,
+    builder: (data) {
+      return _i3.ResumePage();
+    },
+  );
 }
